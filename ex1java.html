@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	
+	<head> 
+			<meta charset="UTF-8">
+			<title>Numeros Primos</title>
+		<script>
+			function numPrimo(){
+			var x= document.getElementById("num");
+			var d=0;
+			for(i=1; i<=x; i=i+1)
+			{
+				if(x%i==0)
+				{
+					d=d+1;
+				}
+			}
+			if(d>2)
+			{
+				r=" não é primo";
+			}else{ r=" é primo";}
+			document.getElementById("result").innerHTML=r;
+			}
+		</script>			
+	</head>
+		
+	<body>
+		<h2 id="result">Teste se seu número é primo ou não:</h2>
+		<input type="number" id="num"/>
+		<button onclick="javascript:numPrimo()">EXECUTAR</button>	
+	</body>
+	
+</html>
+			

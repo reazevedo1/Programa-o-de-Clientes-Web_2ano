@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	
+	<head> 
+			<meta charset="UTF-8">
+			<title>Fatorial</title>
+		<script>
+			function fatorial(){
+			var x= document.getElementById("num").value;
+			var a= Math.floor(x);
+			for(i=x-1;i>=1;i=i-1)
+			{
+				a=a*i;
+			}
+			var r="O Fatorial de "+x+" é "+a;
+			document.getElementById("result").innerHTML=a;
+			}
+		</script>			
+	</head>
+		
+	<body>
+		<h2 id="result">Veja o fatorial de um número</h2>
+		<input type="number" id="num"/>
+		<button onclick="javascript:fatorial()">VER</button>	
+	</body>
+	
+</html>
