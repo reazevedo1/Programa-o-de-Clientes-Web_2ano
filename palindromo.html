@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Palindromo</title>
+
+	<script>
+	function pali(){
+		var p=document.getElementById("palavra").value;
+		aux=p;
+        p = p.split("");
+		inv= p.reverse().join("");
+		var resp;
+		if(aux==inv)
+			resp="Essa palavra é um palíndromo";
+		else
+			resp="Essa palavra não é um palíndromo";
+		document.getElementById("result").innerHTML=resp;
+		}	      
+	</script>
+</head>
+<body>
+	<h2>Veja se sua palavra é um palíndromo:</h2>
+	<input type="text" id="palavra"/>
+	<button onclick="javascript:pali()">Descobrir</button>
+	<p id="result"> </p>
+</body>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>criptografia</title>
+
+	<script>
+	function criptografa(){
+		var p=document.getElementById("palavra").value;
+		var pt=p;
+		var pe=p;
+		var pn=p;
+		var pi=p;
+		var ps=p;
+		var resp=p;		
+		pt = p.replace(/p/g, "t");
+		pe = pt.replace(/o/g, "e");
+		pn = pe.replace(/l/g, "n");
+		pi = pn.replace(/a/g, "i");
+		ps = pi.replace(/r/g, "s");
+		document.getElementById("result").innerHTML=ps;
+		}	      
+	</script>
+</head>
+<body>
+	<h2>Escolha uma palavra:</h2>
+	<input type="text" id="palavra"/>
+	<button onclick="javascript:criptografa()">Criptografar</button>
+	<p  id="result"> </p>
+</body>

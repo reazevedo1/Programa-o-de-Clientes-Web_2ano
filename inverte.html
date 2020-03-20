@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Inverte</title>
+
+	<script>
+	function inverte(){
+		var inv=document.getElementById("palavra").value;
+		inv = inv.split("");
+		norm= inv.reverse().join("");
+		document.getElementById("result").innerHTML=norm;
+		}	      
+	</script>
+</head>
+<body>
+	<h2>Escolha uma palavra:</h2>
+	<input type="text" id="palavra"/>
+	<button onclick="javascript:inverte()">Inverter</button>
+	<p id="result"></p>
+</body>
